@@ -1,0 +1,22 @@
+helicon-opera-bot-e802d20a9d25.json
+service-account.json
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# Секреты
+service-account.json
+.env
+*.log
+
+# База данных (опционально)
+# gelikon.db
