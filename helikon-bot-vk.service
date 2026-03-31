@@ -1,0 +1,16 @@
+[Unit]
+Description=Helikon Opera VK Bot
+After=network.target
+
+[Service]
+Type=simple
+User=cubinez85
+WorkingDirectory=/home/cubinez85/helikon-opera_bot
+Environment="PATH=/home/cubinez85/helikon-opera_bot/venv/bin"
+# ⚠️ Лучше вынести токен в отдельный файл .env, но для начала можно так:
+ExecStart=/home/cubinez85/helikon-opera_bot/venv/bin/python /home/cubinez85/helikon-opera_bot/bot_vk.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
